@@ -209,20 +209,20 @@ namespace AssetStudio.GUI
             fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { loadFileToolStripMenuItem, loadFolderToolStripMenuItem, toolStripMenuItem1, extractFileToolStripMenuItem, extractFolderToolStripMenuItem, toolStripSeparator6, resetToolStripMenuItem, abortStripMenuItem });
             fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            fileToolStripMenuItem.Text = "File";
+            fileToolStripMenuItem.Text = "文件";
             // 
             // loadFileToolStripMenuItem
             // 
             loadFileToolStripMenuItem.Name = "loadFileToolStripMenuItem";
             loadFileToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            loadFileToolStripMenuItem.Text = "Load file";
+            loadFileToolStripMenuItem.Text = "加载文件";
             loadFileToolStripMenuItem.Click += loadFile_Click;
             // 
             // loadFolderToolStripMenuItem
             // 
             loadFolderToolStripMenuItem.Name = "loadFolderToolStripMenuItem";
             loadFolderToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            loadFolderToolStripMenuItem.Text = "Load folder";
+            loadFolderToolStripMenuItem.Text = "加载文件夹";
             loadFolderToolStripMenuItem.Click += loadFolder_Click;
             // 
             // toolStripMenuItem1
@@ -234,14 +234,14 @@ namespace AssetStudio.GUI
             // 
             extractFileToolStripMenuItem.Name = "extractFileToolStripMenuItem";
             extractFileToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            extractFileToolStripMenuItem.Text = "Extract file";
+            extractFileToolStripMenuItem.Text = "提取文件";
             extractFileToolStripMenuItem.Click += extractFileToolStripMenuItem_Click;
             // 
             // extractFolderToolStripMenuItem
             // 
             extractFolderToolStripMenuItem.Name = "extractFolderToolStripMenuItem";
             extractFolderToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            extractFolderToolStripMenuItem.Text = "Extract folder";
+            extractFolderToolStripMenuItem.Text = "提取文件";
             extractFolderToolStripMenuItem.Click += extractFolderToolStripMenuItem_Click;
             // 
             // toolStripSeparator6
@@ -253,14 +253,14 @@ namespace AssetStudio.GUI
             // 
             resetToolStripMenuItem.Name = "resetToolStripMenuItem";
             resetToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            resetToolStripMenuItem.Text = "Reset";
+            resetToolStripMenuItem.Text = "重置";
             resetToolStripMenuItem.Click += resetToolStripMenuItem_Click;
             // 
             // abortStripMenuItem
             // 
             abortStripMenuItem.Name = "abortStripMenuItem";
             abortStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            abortStripMenuItem.Text = "Abort";
+            abortStripMenuItem.Text = "放弃";
             abortStripMenuItem.Click += abortStripMenuItem_Click;
             // 
             // optionsToolStripMenuItem
@@ -268,7 +268,7 @@ namespace AssetStudio.GUI
             optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { displayAll, toolStripSeparator10, enablePreview, enableModelPreview, modelsOnly, toolStripSeparator11, displayInfo, enableResolveDependencies, allowDuplicates, skipContainer, toolStripSeparator12, toolStripMenuItem14, specifyUnityCNKey, toolStripSeparator13, toolStripMenuItem18, toolStripMenuItem19, showExpOpt });
             optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            optionsToolStripMenuItem.Text = "Options";
+            optionsToolStripMenuItem.Text = "设置";
             // 
             // displayAll
             // 
@@ -291,7 +291,7 @@ namespace AssetStudio.GUI
             enablePreview.CheckState = System.Windows.Forms.CheckState.Checked;
             enablePreview.Name = "enablePreview";
             enablePreview.Size = new System.Drawing.Size(225, 22);
-            enablePreview.Text = "Enable preview";
+            enablePreview.Text = "启用预览";
             enablePreview.ToolTipText = "Toggle the loading and preview of readable assets, such as images, sounds, text, etc.\r\nDisable preview if you have performance or compatibility issues.";
             enablePreview.CheckedChanged += enablePreview_Check;
             // 
@@ -300,7 +300,7 @@ namespace AssetStudio.GUI
             enableModelPreview.CheckOnClick = true;
             enableModelPreview.Name = "enableModelPreview";
             enableModelPreview.Size = new System.Drawing.Size(225, 22);
-            enableModelPreview.Text = "Enable model preview";
+            enableModelPreview.Text = "启用模型预览";
             enableModelPreview.CheckedChanged += enableModelPreview_CheckedChanged;
             // 
             // modelsOnly
@@ -308,7 +308,7 @@ namespace AssetStudio.GUI
             modelsOnly.CheckOnClick = true;
             modelsOnly.Name = "modelsOnly";
             modelsOnly.Size = new System.Drawing.Size(225, 22);
-            modelsOnly.Text = "Filter models only";
+            modelsOnly.Text = "仅筛选模型";
             modelsOnly.CheckedChanged += modelsOnly_CheckedChanged;
             // 
             // toolStripSeparator11
@@ -323,7 +323,7 @@ namespace AssetStudio.GUI
             displayInfo.CheckState = System.Windows.Forms.CheckState.Checked;
             displayInfo.Name = "displayInfo";
             displayInfo.Size = new System.Drawing.Size(225, 22);
-            displayInfo.Text = "Display asset information";
+            displayInfo.Text = "显示资产信息";
             displayInfo.ToolTipText = "Toggle the overlay that shows information about each asset, eg. image size, format, audio bitrate, etc.";
             displayInfo.CheckedChanged += displayAssetInfo_Check;
             // 
@@ -334,7 +334,7 @@ namespace AssetStudio.GUI
             enableResolveDependencies.CheckState = System.Windows.Forms.CheckState.Checked;
             enableResolveDependencies.Name = "enableResolveDependencies";
             enableResolveDependencies.Size = new System.Drawing.Size(225, 22);
-            enableResolveDependencies.Text = "Enable resolve dependencies";
+            enableResolveDependencies.Text = "启用解析依赖关系";
             enableResolveDependencies.ToolTipText = "Toggle the behaviour of loading assets.\r\nDisable to load file(s) without its dependencies.";
             enableResolveDependencies.CheckedChanged += enableResolveDependencies_CheckedChanged;
             // 
@@ -343,7 +343,7 @@ namespace AssetStudio.GUI
             allowDuplicates.CheckOnClick = true;
             allowDuplicates.Name = "allowDuplicates";
             allowDuplicates.Size = new System.Drawing.Size(225, 22);
-            allowDuplicates.Text = "Allow duplicates";
+            allowDuplicates.Text = "允许重复";
             allowDuplicates.ToolTipText = "Toggle the behaviour of exporting assets.\r\nEnable to allow assets with duplicate names to be exported.";
             allowDuplicates.CheckedChanged += allowDuplicates_CheckedChanged;
             // 
@@ -352,7 +352,7 @@ namespace AssetStudio.GUI
             skipContainer.CheckOnClick = true;
             skipContainer.Name = "skipContainer";
             skipContainer.Size = new System.Drawing.Size(225, 22);
-            skipContainer.Text = "Skip container recovery";
+            skipContainer.Text = "跳过容器恢复";
             skipContainer.ToolTipText = "Skips the container recovery step.\nImproves loading when dealing with a large number of files.";
             skipContainer.CheckedChanged += skipContainer_CheckedChanged;
             // 
@@ -366,7 +366,7 @@ namespace AssetStudio.GUI
             toolStripMenuItem14.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { specifyUnityVersion });
             toolStripMenuItem14.Name = "toolStripMenuItem14";
             toolStripMenuItem14.Size = new System.Drawing.Size(225, 22);
-            toolStripMenuItem14.Text = "Specify Unity version";
+            toolStripMenuItem14.Text = "指定Unity版本";
             // 
             // specifyUnityVersion
             // 
@@ -378,7 +378,7 @@ namespace AssetStudio.GUI
             // 
             specifyUnityCNKey.Name = "specifyUnityCNKey";
             specifyUnityCNKey.Size = new System.Drawing.Size(225, 22);
-            specifyUnityCNKey.Text = "Specify UnityCN Key";
+            specifyUnityCNKey.Text = "指定UnityCN密钥";
             specifyUnityCNKey.Click += specifyUnityCNKey_Click;
             // 
             // toolStripSeparator13
@@ -391,7 +391,7 @@ namespace AssetStudio.GUI
             toolStripMenuItem18.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { specifyGame });
             toolStripMenuItem18.Name = "toolStripMenuItem18";
             toolStripMenuItem18.Size = new System.Drawing.Size(225, 22);
-            toolStripMenuItem18.Text = "Specify Game";
+            toolStripMenuItem18.Text = "指定游戏";
             // 
             // specifyGame
             // 
@@ -404,7 +404,7 @@ namespace AssetStudio.GUI
             toolStripMenuItem19.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { specifyAIVersion });
             toolStripMenuItem19.Name = "toolStripMenuItem19";
             toolStripMenuItem19.Size = new System.Drawing.Size(225, 22);
-            toolStripMenuItem19.Text = "Specify AI version";
+            toolStripMenuItem19.Text = "指定AI版本";
             toolStripMenuItem19.DropDownOpening += toolStripMenuItem19_DropDownOpening;
             // 
             // specifyAIVersion
@@ -418,7 +418,7 @@ namespace AssetStudio.GUI
             // 
             showExpOpt.Name = "showExpOpt";
             showExpOpt.Size = new System.Drawing.Size(225, 22);
-            showExpOpt.Text = "Export options";
+            showExpOpt.Text = "导出设置";
             showExpOpt.Click += showExpOpt_Click;
             // 
             // modelToolStripMenuItem
