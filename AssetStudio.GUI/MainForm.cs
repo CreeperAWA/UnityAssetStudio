@@ -160,7 +160,7 @@ namespace AssetStudio.GUI
             specifyGame.SelectedIndexChanged += new EventHandler(specifyGame_SelectedIndexChanged);
             Studio.Game = GameManager.GetGame(Properties.Settings.Default.selectedGame);
             TypeFlags.SetTypes(JsonConvert.DeserializeObject<Dictionary<ClassIDType, (bool, bool)>>(Properties.Settings.Default.types));
-            Logger.Info($"Target Game type is {Studio.Game.Type}");
+            Logger.Info($"目标游戏类型为 {Studio.Game.Type}");
 
             if (Studio.Game.Type.IsUnityCN())
             {
@@ -259,7 +259,7 @@ namespace AssetStudio.GUI
                     var fileNames = openFileDialog1.FileNames;
                     var savePath = saveFolderDialog.Folder;
                     var extractedCount = await Task.Run(() => ExtractFile(fileNames, savePath));
-                    StatusStripUpdate($"Finished extracting {extractedCount} files.");
+                    StatusStripUpdate($"提取完成 {extractedCount} 个文件.");
                 }
             }
         }
@@ -276,7 +276,7 @@ namespace AssetStudio.GUI
                     var path = openFolderDialog.Folder;
                     var savePath = saveFolderDialog.Folder;
                     var extractedCount = await Task.Run(() => ExtractFolder(path, savePath));
-                    StatusStripUpdate($"Finished extracting {extractedCount} files.");
+                    StatusStripUpdate($"提取完成 {extractedCount} 个文件.");
                 }
             }
         }
@@ -459,7 +459,7 @@ namespace AssetStudio.GUI
                         Progress.Report(++i, count);
                     }
 
-                    StatusStripUpdate("Finished exporting class structures");
+                    StatusStripUpdate("已完成导出类结构");
                 }
             }
         }
@@ -593,7 +593,7 @@ namespace AssetStudio.GUI
                     }
                     catch (Exception ex)
                     {
-                        Logger.Error("Invalid Regex.\n" + ex.Message);
+                        Logger.Error("正则表达式无效.\n" + ex.Message);
                         return;
                     }
                     var regex = new Regex(treeSearch.Text, RegexOptions.IgnoreCase);
@@ -680,7 +680,7 @@ namespace AssetStudio.GUI
                 }
                 var json = JsonConvert.SerializeObject(nodes, Formatting.Indented);
                 File.WriteAllText(path, json);
-                Logger.Info("Scene Hierarchy dumped sucessfully !!");
+                Logger.Info("场景层次结构已成功转储");
             }
         }
 
@@ -886,7 +886,7 @@ namespace AssetStudio.GUI
             }
             catch (Exception e)
             {
-                Logger.Error($"Preview {assetItem.Type}:{assetItem.Text} error\r\n{e.Message}\r\n{e.StackTrace}");
+                Logger.Error($"预览 {assetItem.Type}:{assetItem.Text} 错误\r\n{e.Message}\r\n{e.StackTrace}");
             }
         }
 
@@ -993,7 +993,7 @@ namespace AssetStudio.GUI
                         assetItem.InfoText += "iPhone";
                         break;
                     default:
-                        assetItem.InfoText += "Unknown";
+                        assetItem.InfoText += "未知";
                         break;
                 }
             }
@@ -1032,7 +1032,7 @@ namespace AssetStudio.GUI
                         assetItem.InfoText += "PSVita ATRAC9";
                         break;
                     default:
-                        assetItem.InfoText += "Unknown";
+                        assetItem.InfoText += "未知";
                         break;
                 }
             }
@@ -1083,7 +1083,7 @@ namespace AssetStudio.GUI
             }
 
             var str = m_Shader.Convert();
-            PreviewText(str == null ? "Serialized Shader can't be read" : str.Replace("\n", "\r\n"));
+            PreviewText(str == null ? "无法读取序列化着色器" : str.Replace("\n", "\r\n"));
         }
 
         private void PreviewTextAsset(TextAsset m_TextAsset)
@@ -1301,7 +1301,7 @@ namespace AssetStudio.GUI
             }
             else
             {
-                StatusStripUpdate("Unable to preview this mesh");
+                StatusStripUpdate("无法预览此网格");
             }
         }
 
@@ -1700,7 +1700,7 @@ namespace AssetStudio.GUI
                     var roots = sceneTreeView.Nodes.Cast<TreeNode>().Where(x => x.Level == 0 && x.Checked).ToList();
                     if (roots.Count == 0)
                     {
-                        Logger.Info("No root nodes found selected.");
+                        Logger.Info("未找到选定的根节点");
                         return;
                     }
                     List<AssetItem> animationList = null;
@@ -1816,7 +1816,7 @@ namespace AssetStudio.GUI
             }
             else
             {
-                StatusStripUpdate("No Objects available for export");
+                StatusStripUpdate("没有可用于导出的对象");
             }
         }
 
@@ -1877,7 +1877,7 @@ namespace AssetStudio.GUI
                 }
                 catch (Exception ex)
                 {
-                    Logger.Error("Invalid Regex.\n" + ex.Message);
+                    Logger.Error("正则表达式无效.\n" + ex.Message);
                     listSearch.Text = "";
                 }
                 var regex = new Regex(listSearch.Text, RegexOptions.IgnoreCase);
@@ -1918,7 +1918,7 @@ namespace AssetStudio.GUI
             }
             else
             {
-                StatusStripUpdate("No exportable assets loaded");
+                StatusStripUpdate("未加载可导出资产");
             }
         }
 
@@ -1952,7 +1952,7 @@ namespace AssetStudio.GUI
             }
             else
             {
-                StatusStripUpdate("No exportable assets loaded");
+                StatusStripUpdate("未加载可导出资产");
             }
         }
 
@@ -1985,7 +1985,7 @@ namespace AssetStudio.GUI
             }
             if (skipContainer.Checked)
             {
-                Logger.Info("Skip container is enabled, aborting...");
+                Logger.Info("跳过容器已启用，正在中止...");
                 return;
             }
             optionsToolStripMenuItem.DropDown.Visible = false;
@@ -1996,7 +1996,7 @@ namespace AssetStudio.GUI
                 version = version.Split(' ')[0];
             }
 
-            Logger.Info($"Loading AI v{version}");
+            Logger.Info($"加载AI v{version}");
             InvokeUpdate(specifyAIVersion, false);
             var path = await AIVersionManager.FetchAI(version);
             await Task.Run(() => ResourceIndex.FromFile(path));
@@ -2026,7 +2026,7 @@ namespace AssetStudio.GUI
         {
             if (exportableAssets.Count > 0)
             {
-                Logger.Info("Updating Containers...");
+                Logger.Info("更新容器中...");
                 assetListView.BeginUpdate();
                 foreach (var asset in exportableAssets)
                 {
@@ -2050,7 +2050,7 @@ namespace AssetStudio.GUI
                     }
                 }
                 assetListView.EndUpdate();
-                Logger.Info("Updated !!");
+                Logger.Info("更新");
             }
         }
 
@@ -2136,7 +2136,7 @@ namespace AssetStudio.GUI
             ResetForm();
 
             Studio.Game = GameManager.GetGame(Properties.Settings.Default.selectedGame);
-            Logger.Info($"Target Game is {Studio.Game.Name}");
+            Logger.Info($"目标游戏为 {Studio.Game.Name}");
 
             if (Studio.Game.Type.IsUnityCN())
             {
@@ -2187,7 +2187,7 @@ namespace AssetStudio.GUI
             {
                 if (input.IndexOfAny(Path.GetInvalidFileNameChars()) != -1)
                 {
-                    Logger.Warning("Name has invalid characters !!");
+                    Logger.Warning("名称包含无效字符");
                     InvokeUpdate(miscToolStripMenuItem, true);
                     return;
                 }
@@ -2196,7 +2196,7 @@ namespace AssetStudio.GUI
             }
             else
             {
-                Logger.Error("Map name is empty, please enter any name in ComboBox above");
+                Logger.Error("地图名称为空，请在上面的下拉框中输入任何名称");
                 InvokeUpdate(miscToolStripMenuItem, true);
                 return;
             }
@@ -2216,9 +2216,9 @@ namespace AssetStudio.GUI
             openFolderDialog.Title = "Select Game Folder";
             if (openFolderDialog.ShowDialog(this) == DialogResult.OK)
             {
-                Logger.Info("Scanning for files...");
+                Logger.Info("正在扫描文件...");
                 var files = Directory.GetFiles(openFolderDialog.Folder, "*.*", SearchOption.AllDirectories).ToArray();
-                Logger.Info($"Found {files.Length} files");
+                Logger.Info($"找到 {files.Length} 个文件");
                 AssetsHelper.SetUnityVersion(version);
                 await Task.Run(() => AssetsHelper.BuildCABMap(files, name, openFolderDialog.Folder, Studio.Game));
             }
@@ -2243,7 +2243,7 @@ namespace AssetStudio.GUI
             {
                 if (input.IndexOfAny(Path.GetInvalidFileNameChars()) != -1)
                 {
-                    Logger.Warning("Name has invalid characters !!");
+                    Logger.Warning("名称包含无效字符");
                     InvokeUpdate(miscToolStripMenuItem, true);
                     return;
                 }
@@ -2252,7 +2252,7 @@ namespace AssetStudio.GUI
             }
             else
             {
-                Logger.Error("Map name is empty, please enter any name in ComboBox above");
+                Logger.Error("地图名称为空，请在上面的下拉框中输入任何名称");
                 InvokeUpdate(miscToolStripMenuItem, true);
                 return;
             }
@@ -2272,9 +2272,9 @@ namespace AssetStudio.GUI
             openFolderDialog.Title = "Select Game Folder";
             if (openFolderDialog.ShowDialog(this) == DialogResult.OK)
             {
-                Logger.Info("Scanning for files...");
+                Logger.Info("正在扫描文件...");
                 var files = Directory.GetFiles(openFolderDialog.Folder, "*.*", SearchOption.AllDirectories).ToArray();
-                Logger.Info($"Found {files.Length} files");
+                Logger.Info($"找到 {files.Length} 个文件");
 
                 var saveFolderDialog = new OpenFolderDialog();
                 saveFolderDialog.InitialFolder = saveDirectoryBackup;
@@ -2306,7 +2306,7 @@ namespace AssetStudio.GUI
             if (File.Exists(path))
             {
                 File.Delete(path);
-                Logger.Info($"{name} deleted successfully !!");
+                Logger.Info($"{name} 删除成功");
                 MapNameComboBox.SelectedIndexChanged -= new EventHandler(specifyNameComboBox_SelectedIndexChanged);
                 MapNameComboBox.SelectedIndex = 0;
                 MapNameComboBox.SelectedIndexChanged += new EventHandler(specifyNameComboBox_SelectedIndexChanged);
@@ -2368,7 +2368,7 @@ namespace AssetStudio.GUI
 
         private void abortStripMenuItem_Click(object sender, EventArgs e)
         {
-            Logger.Info("Aborting....");
+            Logger.Info("正在中止....");
             assetsManager.tokenSource.Cancel();
             AssetsHelper.tokenSource.Cancel();
         }
@@ -2377,7 +2377,7 @@ namespace AssetStudio.GUI
         {
             if (skipContainer.Checked)
             {
-                Logger.Info("Skip container is enabled, aborting...");
+                Logger.Info("跳过容器已启用，正在中止...");
                 return;
             }
             miscToolStripMenuItem.DropDown.Visible = false;
@@ -2386,7 +2386,7 @@ namespace AssetStudio.GUI
             if (openFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 var path = openFileDialog.FileName;
-                Logger.Info($"Loading AI...");
+                Logger.Info($"加载AI中...");
                 InvokeUpdate(loadAIToolStripMenuItem, false);
                 await Task.Run(() => ResourceIndex.FromFile(path));
                 UpdateContainers();
@@ -2426,7 +2426,7 @@ namespace AssetStudio.GUI
             {
                 if (input.IndexOfAny(Path.GetInvalidFileNameChars()) != -1)
                 {
-                    Logger.Warning("Name has invalid characters !!");
+                    Logger.Warning("名称包含无效字符");
                     InvokeUpdate(miscToolStripMenuItem, true);
                     return;
                 }
@@ -2439,9 +2439,9 @@ namespace AssetStudio.GUI
             openFolderDialog.Title = $"Select Game Folder";
             if (openFolderDialog.ShowDialog(this) == DialogResult.OK)
             {
-                Logger.Info("Scanning for files...");
+                Logger.Info("扫描文件中...");
                 var files = Directory.GetFiles(openFolderDialog.Folder, "*.*", SearchOption.AllDirectories).ToArray();
-                Logger.Info($"Found {files.Length} files");
+                Logger.Info($"找到 {files.Length} 个文件");
 
                 var saveFolderDialog = new OpenFolderDialog();
                 saveFolderDialog.InitialFolder = saveDirectoryBackup;
@@ -2479,7 +2479,7 @@ namespace AssetStudio.GUI
             ERRCHECK(result);
             if (version < FMOD.VERSION.number)
             {
-                Logger.Error($"Error!  You are using an old version of FMOD {version:X}.  This program requires {FMOD.VERSION.number:X}.");
+                Logger.Error($"错误！您正在使用旧版本的FMOD {version:X}.  此程序需要 {FMOD.VERSION.number:X}.");
                 Application.Exit();
             }
 
