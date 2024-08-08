@@ -940,11 +940,11 @@ namespace AssetStudio.GUI
                 }
                 PreviewTexture(bitmap);
 
-                StatusStripUpdate("'Ctrl'+'R'/'G'/'B'/'A' for Channel Toggle");
+                StatusStripUpdate("'Ctrl'+'R'/'G'/'B'/'A' 用于频道切换");
             }
             else
             {
-                StatusStripUpdate("Unsupported image for preview");
+                StatusStripUpdate("不支持预览图像");
             }
         }
 
@@ -1295,9 +1295,9 @@ namespace AssetStudio.GUI
                 #endregion
                 glControl.Visible = true;
                 CreateVAO();
-                StatusStripUpdate("Using OpenGL Version: " + GL.GetString(StringName.Version) + "\n"
-                                  + "'Mouse Left'=Rotate | 'Mouse Right'=Move | 'Mouse Wheel'=Zoom \n"
-                                  + "'Ctrl W'=Wireframe | 'Ctrl S'=Shade | 'Ctrl N'=ReNormal ");
+                StatusStripUpdate("使用的OpenGL版本: " + GL.GetString(StringName.Version) + "\n"
+                                  + "'鼠标左键'=旋转 | '鼠标右键'=移动 | '鼠标滚轮'=Zoom \n"
+                                  + "'Ctrl W'=线框 | 'Ctrl S'=光影 | 'Ctrl N'=ReNormal ");
             }
             else
             {
