@@ -275,8 +275,8 @@ namespace AssetStudio.GUI
             displayAll.CheckOnClick = true;
             displayAll.Name = "displayAll";
             displayAll.Size = new System.Drawing.Size(225, 22);
-            displayAll.Text = "Display all assets";
-            displayAll.ToolTipText = "Check this option will display all types assets. Not extractable assets can export the RAW file.";
+            displayAll.Text = "显示所有资产";
+            displayAll.ToolTipText = "选中此选项将显示所有类型的资产。无法提取的资产可以导出RAW文件。";
             displayAll.CheckedChanged += displayAll_CheckedChanged;
             // 
             // toolStripSeparator10
@@ -292,7 +292,7 @@ namespace AssetStudio.GUI
             enablePreview.Name = "enablePreview";
             enablePreview.Size = new System.Drawing.Size(225, 22);
             enablePreview.Text = "启用预览";
-            enablePreview.ToolTipText = "Toggle the loading and preview of readable assets, such as images, sounds, text, etc.\r\nDisable preview if you have performance or compatibility issues.";
+            enablePreview.ToolTipText = "切换可读资源（如图像、声音、文本等）的加载和预览。\r\n如果您有性能或兼容性问题，请禁用预览。";
             enablePreview.CheckedChanged += enablePreview_Check;
             // 
             // enableModelPreview
@@ -324,7 +324,7 @@ namespace AssetStudio.GUI
             displayInfo.Name = "displayInfo";
             displayInfo.Size = new System.Drawing.Size(225, 22);
             displayInfo.Text = "显示资产信息";
-            displayInfo.ToolTipText = "Toggle the overlay that shows information about each asset, eg. image size, format, audio bitrate, etc.";
+            displayInfo.ToolTipText = "切换显示每个资产信息的叠加，例如图像大小、格式、音频比特率等。";
             displayInfo.CheckedChanged += displayAssetInfo_Check;
             // 
             // enableResolveDependencies
@@ -335,7 +335,7 @@ namespace AssetStudio.GUI
             enableResolveDependencies.Name = "enableResolveDependencies";
             enableResolveDependencies.Size = new System.Drawing.Size(225, 22);
             enableResolveDependencies.Text = "启用解析依赖关系";
-            enableResolveDependencies.ToolTipText = "Toggle the behaviour of loading assets.\r\nDisable to load file(s) without its dependencies.";
+            enableResolveDependencies.ToolTipText = "切换加载资源的行为。\r\n无法加载没有依赖项的文件。";
             enableResolveDependencies.CheckedChanged += enableResolveDependencies_CheckedChanged;
             // 
             // allowDuplicates
@@ -344,7 +344,7 @@ namespace AssetStudio.GUI
             allowDuplicates.Name = "allowDuplicates";
             allowDuplicates.Size = new System.Drawing.Size(225, 22);
             allowDuplicates.Text = "允许重复";
-            allowDuplicates.ToolTipText = "Toggle the behaviour of exporting assets.\r\nEnable to allow assets with duplicate names to be exported.";
+            allowDuplicates.ToolTipText = "切换导出资产的行为。\\r\n允许导出具有重复名称的资产。";
             allowDuplicates.CheckedChanged += allowDuplicates_CheckedChanged;
             // 
             // skipContainer
@@ -353,7 +353,7 @@ namespace AssetStudio.GUI
             skipContainer.Name = "skipContainer";
             skipContainer.Size = new System.Drawing.Size(225, 22);
             skipContainer.Text = "跳过容器恢复";
-            skipContainer.ToolTipText = "Skips the container recovery step.\nImproves loading when dealing with a large number of files.";
+            skipContainer.ToolTipText = "跳过容器恢复步骤。\n改进处理大量文件时的加载。";
             skipContainer.CheckedChanged += skipContainer_CheckedChanged;
             // 
             // toolStripSeparator12

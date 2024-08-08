@@ -132,7 +132,7 @@ namespace AssetStudio
 
     public enum GameType
     {
-        Normal,
+        一般的,
         UnityCN,
         GI,
         GI_Pack,
@@ -175,7 +175,7 @@ namespace AssetStudio
 
     public static class GameTypes
     {
-        public static bool IsNormal(this GameType type) => type == GameType.Normal;
+        public static bool IsNormal(this GameType type) => type == GameType.一般的;
         public static bool IsUnityCN(this GameType type) => type == GameType.UnityCN;
         public static bool IsGI(this GameType type) => type == GameType.GI;
         public static bool IsGIPack(this GameType type) => type == GameType.GI_Pack;
