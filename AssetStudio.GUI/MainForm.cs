@@ -189,22 +189,14 @@ namespace AssetStudio.GUI
             }
         }
 
-        public async void LoadPaths(params string[] paths)
+        private async void MainForm_DragDrop(object sender, DragEventArgs e)
         {
-            ResetForm();
-            assetsManager.SpecifyUnityVersion = specifyUnityVersion.Text;
-            assetsManager.Game = Studio.Game;
-            if (paths.Length == 1 && Directory.Exists(paths[0]))
+            var paths = (string[])e.Data.GetData(DataFormats.FileDrop);
+            if (paths.Length > 0)
             {
-                await Task.Run(() => assetsManager.LoadFolder(paths[0]));
+                LoadPaths(paths);
             }
-            else
-            {
-                await Task.Run(() => assetsManager.LoadFiles(paths));
-            }
-            BuildAssetStructures();
         }
-
 
         public async void LoadPaths(params string[] paths)
         {
@@ -1467,7 +1459,7 @@ namespace AssetStudio.GUI
         {
             if (InvokeRequired)
             {
-
+                
                 var result = BeginInvoke(new Action(() => { progressBar1.Value = value; }));
                 result.AsyncWaitHandle.WaitOne();
             }
