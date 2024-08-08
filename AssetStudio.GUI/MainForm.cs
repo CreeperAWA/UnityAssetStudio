@@ -351,7 +351,7 @@ namespace AssetStudio.GUI
             var objectsCount = assetsManager.assetsFileList.Sum(x => x.Objects.Count);
             if (m_ObjectsCount != objectsCount)
             {
-                log += $" 但是有 {m_ObjectsCount - objectsCount} 的文件读取失败";
+                log += $" 但是有 {m_ObjectsCount - objectsCount} 个文件读取失败";
             }
             StatusStripUpdate(log);
         }
