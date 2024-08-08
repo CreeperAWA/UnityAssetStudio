@@ -234,14 +234,14 @@ namespace AssetStudio.GUI
             // 
             extractFileToolStripMenuItem.Name = "extractFileToolStripMenuItem";
             extractFileToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            extractFileToolStripMenuItem.Text = "提取文件";
+            extractFileToolStripMenuItem.Text = "提取到文件";
             extractFileToolStripMenuItem.Click += extractFileToolStripMenuItem_Click;
             // 
             // extractFolderToolStripMenuItem
             // 
             extractFolderToolStripMenuItem.Name = "extractFolderToolStripMenuItem";
             extractFolderToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            extractFolderToolStripMenuItem.Text = "提取文件";
+            extractFolderToolStripMenuItem.Text = "提取到文件夹";
             extractFolderToolStripMenuItem.Click += extractFolderToolStripMenuItem_Click;
             // 
             // toolStripSeparator6
