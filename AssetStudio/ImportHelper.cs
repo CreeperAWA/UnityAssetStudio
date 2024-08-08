@@ -209,7 +209,7 @@ namespace AssetStudio
             }
             catch (InvalidCastException)
             {
-                Logger.Error($"Game type mismatch, Expected {nameof(GameType.GI_Pack)} ({nameof(Mr0k)}) but got {game.Name} ({game.GetType().Name}) !!");
+                Logger.Error($"Game type mismatch, Expected {nameof(GameType.原神_Pack)} ({nameof(Mr0k)}) but got {game.Name} ({game.GetType().Name}) !!");
             }
             catch (Exception e)
             {

@@ -7,7 +7,7 @@ namespace AssetStudio
 {
     public static class ResourceMap
     {
-        private static AssetMap Instance = new() { GameType = GameType.Normal, AssetEntries = new List<AssetEntry>() };
+        private static AssetMap Instance = new() { GameType = GameType.一般的, AssetEntries = new List<AssetEntry>() };
         public static List<AssetEntry> GetEntries() => Instance.AssetEntries;
         public static void FromFile(string path)
         {
@@ -31,7 +31,7 @@ namespace AssetStudio
 
         public static void Clear()
         {
-            Instance.GameType = GameType.Normal;
+            Instance.GameType = GameType.一般的;
             Instance.AssetEntries = new List<AssetEntry>();
         }
     }

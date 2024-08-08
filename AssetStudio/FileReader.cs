@@ -168,13 +168,13 @@ namespace AssetStudio
                 Logger.Verbose("File is encrypted !!");
                 switch (game.Type)
                 {
-                    case GameType.GI_Pack:
+                    case GameType.原神_Pack:
                         reader = DecryptPack(reader, game);
                         break;
-                    case GameType.GI_CB1:
+                    case GameType.原神_CB1:
                         reader = DecryptMark(reader);
                         break;
-                    case GameType.EnsembleStars:
+                    case GameType.偶像梦幻祭:
                         reader = DecryptEnsembleStar(reader);
                         break;
                     case GameType.OPFP:
