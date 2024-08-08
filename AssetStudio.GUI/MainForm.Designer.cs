@@ -565,7 +565,7 @@ namespace AssetStudio.GUI
             toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem7, toolStripMenuItem8, toolStripMenuItem9 });
             toolStripMenuItem3.Name = "toolStripMenuItem3";
             toolStripMenuItem3.Size = new System.Drawing.Size(266, 22);
-            toolStripMenuItem3.Text = "Dump";
+            toolStripMenuItem3.Text = "转储";
             // 
             // toolStripMenuItem7
             // 
@@ -653,7 +653,7 @@ namespace AssetStudio.GUI
             // 
             sceneHierarchy.Name = "sceneHierarchy";
             sceneHierarchy.Size = new System.Drawing.Size(266, 22);
-            sceneHierarchy.Text = "Scene hierarchy";
+            sceneHierarchy.Text = "场景层次结构";
             sceneHierarchy.Click += sceneHierarchy_Click;
             // 
             // filterTypeToolStripMenuItem
@@ -884,7 +884,7 @@ namespace AssetStudio.GUI
             tabPage1.Name = "tabPage1";
             tabPage1.Size = new System.Drawing.Size(472, 607);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "Scene Hierarchy";
+            tabPage1.Text = "场景层次结构";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // sceneTreeView
@@ -918,7 +918,7 @@ namespace AssetStudio.GUI
             tabPage2.Name = "tabPage2";
             tabPage2.Size = new System.Drawing.Size(472, 607);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "Asset List";
+            tabPage2.Text = "资产列表";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // assetListView
@@ -981,7 +981,7 @@ namespace AssetStudio.GUI
             tabPage3.Name = "tabPage3";
             tabPage3.Size = new System.Drawing.Size(472, 607);
             tabPage3.TabIndex = 2;
-            tabPage3.Text = "Asset Classes";
+            tabPage3.Text = "资产类别";
             tabPage3.UseVisualStyleBackColor = true;
             // 
             // classesListView
@@ -1048,7 +1048,7 @@ namespace AssetStudio.GUI
             tabPage4.Name = "tabPage4";
             tabPage4.Size = new System.Drawing.Size(768, 605);
             tabPage4.TabIndex = 0;
-            tabPage4.Text = "Preview";
+            tabPage4.Text = "预览";
             tabPage4.UseVisualStyleBackColor = true;
             // 
             // previewPanel
@@ -1272,7 +1272,7 @@ namespace AssetStudio.GUI
             tabPage5.Name = "tabPage5";
             tabPage5.Size = new System.Drawing.Size(768, 605);
             tabPage5.TabIndex = 1;
-            tabPage5.Text = "Dump";
+            tabPage5.Text = "转储";
             tabPage5.UseVisualStyleBackColor = true;
             // 
             // dumpTextBox
@@ -1302,7 +1302,7 @@ namespace AssetStudio.GUI
             toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             toolStripStatusLabel1.Size = new System.Drawing.Size(761, 17);
             toolStripStatusLabel1.Spring = true;
-            toolStripStatusLabel1.Text = "Ready to go";
+            toolStripStatusLabel1.Text = "已就绪";
             toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // timer
