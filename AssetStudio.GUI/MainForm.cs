@@ -346,12 +346,12 @@ namespace AssetStudio.GUI
                 filterTypeToolStripMenuItem.DropDownItems.Add(typeItem);
             }
             allToolStripMenuItem.Checked = true;
-            var log = $"Finished loading {assetsManager.assetsFileList.Count} files with {assetListView.Items.Count} exportable assets";
+            var log = $"完成加载 {assetsManager.assetsFileList.Count} 个文件 与 {assetListView.Items.Count} 个可输出资产";
             var m_ObjectsCount = assetsManager.assetsFileList.Sum(x => x.m_Objects.Count);
             var objectsCount = assetsManager.assetsFileList.Sum(x => x.Objects.Count);
             if (m_ObjectsCount != objectsCount)
             {
-                log += $" and {m_ObjectsCount - objectsCount} assets failed to read";
+                log += $" 但是有 {m_ObjectsCount - objectsCount} 的文件读取失败";
             }
             StatusStripUpdate(log);
         }
