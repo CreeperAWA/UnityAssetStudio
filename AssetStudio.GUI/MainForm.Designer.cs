@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace AssetStudio.GUI
 {
@@ -1407,6 +1408,11 @@ namespace AssetStudio.GUI
             contextMenuStrip1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void MainForm_DragDrop(object sender, DragEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

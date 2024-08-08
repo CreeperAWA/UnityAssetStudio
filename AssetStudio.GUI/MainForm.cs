@@ -189,14 +189,22 @@ namespace AssetStudio.GUI
             }
         }
 
-        private async void MainForm_DragDrop(object sender, DragEventArgs e)
+        public async void LoadPaths(params string[] paths)
         {
-            var paths = (string[])e.Data.GetData(DataFormats.FileDrop);
-            if (paths.Length > 0)
+            ResetForm();
+            assetsManager.SpecifyUnityVersion = specifyUnityVersion.Text;
+            assetsManager.Game = Studio.Game;
+            if (paths.Length == 1 && Directory.Exists(paths[0]))
             {
-                LoadPaths(paths);
+                await Task.Run(() => assetsManager.LoadFolder(paths[0]));
             }
+            else
+            {
+                await Task.Run(() => assetsManager.LoadFiles(paths));
+            }
+            BuildAssetStructures();
         }
+
 
         public async void LoadPaths(params string[] paths)
         {
@@ -285,7 +293,7 @@ namespace AssetStudio.GUI
         {
             if (assetsManager.assetsFileList.Count == 0)
             {
-                StatusStripUpdate("No Unity file can be loaded.");
+                StatusStripUpdate("没有Unity文件可以被加载");
                 return;
             }
 
@@ -1459,7 +1467,7 @@ namespace AssetStudio.GUI
         {
             if (InvokeRequired)
             {
-                
+
                 var result = BeginInvoke(new Action(() => { progressBar1.Value = value; }));
                 result.AsyncWaitHandle.WaitOne();
             }
@@ -1515,7 +1523,7 @@ namespace AssetStudio.GUI
             }
 
             FMODreset();
-            StatusStripUpdate("Reset successfully !!");
+            StatusStripUpdate("重置成功");
         }
 
         private void assetListView_MouseClick(object sender, MouseEventArgs e)
