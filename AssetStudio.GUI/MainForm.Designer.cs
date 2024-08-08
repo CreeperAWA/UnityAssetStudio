@@ -397,7 +397,7 @@ namespace AssetStudio.GUI
             // 
             specifyGame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             specifyGame.Name = "specifyGame";
-            specifyGame.Size = new System.Drawing.Size(121, 23);
+            specifyGame.Size = new System.Drawing.Size(225, 22);
             // 
             // toolStripMenuItem19
             // 
@@ -426,27 +426,27 @@ namespace AssetStudio.GUI
             modelToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { exportAllObjectssplitToolStripMenuItem1, exportSelectedObjectsToolStripMenuItem, exportSelectedObjectsWithAnimationClipToolStripMenuItem, toolStripSeparator1, exportSelectedObjectsmergeToolStripMenuItem, exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem, toolStripSeparator9, exportSelectedNodessplitToolStripMenuItem, exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem });
             modelToolStripMenuItem.Name = "modelToolStripMenuItem";
             modelToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            modelToolStripMenuItem.Text = "Model";
+            modelToolStripMenuItem.Text = "模型";
             // 
             // exportAllObjectssplitToolStripMenuItem1
             // 
             exportAllObjectssplitToolStripMenuItem1.Name = "exportAllObjectssplitToolStripMenuItem1";
             exportAllObjectssplitToolStripMenuItem1.Size = new System.Drawing.Size(382, 22);
-            exportAllObjectssplitToolStripMenuItem1.Text = "Export all objects (split)";
+            exportAllObjectssplitToolStripMenuItem1.Text = "导出所有对象（拆分）";
             exportAllObjectssplitToolStripMenuItem1.Click += exportAllObjectssplitToolStripMenuItem1_Click;
             // 
             // exportSelectedObjectsToolStripMenuItem
             // 
             exportSelectedObjectsToolStripMenuItem.Name = "exportSelectedObjectsToolStripMenuItem";
             exportSelectedObjectsToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            exportSelectedObjectsToolStripMenuItem.Text = "Export selected objects (split)";
+            exportSelectedObjectsToolStripMenuItem.Text = "导出选定对象（拆分）";
             exportSelectedObjectsToolStripMenuItem.Click += exportSelectedObjectsToolStripMenuItem_Click;
             // 
             // exportSelectedObjectsWithAnimationClipToolStripMenuItem
             // 
             exportSelectedObjectsWithAnimationClipToolStripMenuItem.Name = "exportSelectedObjectsWithAnimationClipToolStripMenuItem";
             exportSelectedObjectsWithAnimationClipToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            exportSelectedObjectsWithAnimationClipToolStripMenuItem.Text = "Export selected objects (split) + selected AnimationClips";
+            exportSelectedObjectsWithAnimationClipToolStripMenuItem.Text = "导出选定对象（分割）+选定动画剪辑";
             exportSelectedObjectsWithAnimationClipToolStripMenuItem.Click += exportObjectswithAnimationClipMenuItem_Click;
             // 
             // toolStripSeparator1
@@ -458,14 +458,14 @@ namespace AssetStudio.GUI
             // 
             exportSelectedObjectsmergeToolStripMenuItem.Name = "exportSelectedObjectsmergeToolStripMenuItem";
             exportSelectedObjectsmergeToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            exportSelectedObjectsmergeToolStripMenuItem.Text = "Export selected objects (merge)";
+            exportSelectedObjectsmergeToolStripMenuItem.Text = "导出选定对象（合并）";
             exportSelectedObjectsmergeToolStripMenuItem.Click += exportSelectedObjectsmergeToolStripMenuItem_Click;
             // 
             // exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem
             // 
             exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Name = "exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem";
             exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Text = "Export selected objects (merge) + selected AnimationClips";
+            exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Text = "导出选定对象（合并）+选定动画剪辑";
             exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Click += exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem_Click;
             // 
             // toolStripSeparator9
@@ -477,14 +477,14 @@ namespace AssetStudio.GUI
             // 
             exportSelectedNodessplitToolStripMenuItem.Name = "exportSelectedNodessplitToolStripMenuItem";
             exportSelectedNodessplitToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            exportSelectedNodessplitToolStripMenuItem.Text = "Export selected nodes (split)";
+            exportSelectedNodessplitToolStripMenuItem.Text = "导出选定节点（拆分）";
             exportSelectedNodessplitToolStripMenuItem.Click += exportSelectedNodessplitToolStripMenuItem_Click;
             // 
             // exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem
             // 
             exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem.Name = "exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem";
             exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem.Size = new System.Drawing.Size(382, 22);
-            exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem.Text = "Export selected nodes (split) + selected AnimationClips";
+            exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem.Text = "导出选定节点（拆分）+选定动画剪辑";
             exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem.Click += exportSelectedNodessplitSelectedAnimationClipsToolStripMenuItem_Click;
             // 
             // exportToolStripMenuItem
@@ -492,27 +492,27 @@ namespace AssetStudio.GUI
             exportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { exportAllAssetsMenuItem, exportSelectedAssetsMenuItem, exportFilteredAssetsMenuItem, toolStripSeparator3, exportAnimatorWithSelectedAnimationClipToolStripMenuItem, toolStripSeparator4, toolStripMenuItem2, toolStripMenuItem3, toolStripMenuItem16, toolStripSeparator2, toolStripMenuItem10, sceneHierarchy });
             exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             exportToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            exportToolStripMenuItem.Text = "Export";
+            exportToolStripMenuItem.Text = "导出";
             // 
             // exportAllAssetsMenuItem
             // 
             exportAllAssetsMenuItem.Name = "exportAllAssetsMenuItem";
             exportAllAssetsMenuItem.Size = new System.Drawing.Size(266, 22);
-            exportAllAssetsMenuItem.Text = "All assets";
+            exportAllAssetsMenuItem.Text = "所有资产";
             exportAllAssetsMenuItem.Click += exportAllAssetsMenuItem_Click;
             // 
             // exportSelectedAssetsMenuItem
             // 
             exportSelectedAssetsMenuItem.Name = "exportSelectedAssetsMenuItem";
             exportSelectedAssetsMenuItem.Size = new System.Drawing.Size(266, 22);
-            exportSelectedAssetsMenuItem.Text = "Selected assets";
+            exportSelectedAssetsMenuItem.Text = "选定资产";
             exportSelectedAssetsMenuItem.Click += exportSelectedAssetsMenuItem_Click;
             // 
             // exportFilteredAssetsMenuItem
             // 
             exportFilteredAssetsMenuItem.Name = "exportFilteredAssetsMenuItem";
             exportFilteredAssetsMenuItem.Size = new System.Drawing.Size(266, 22);
-            exportFilteredAssetsMenuItem.Text = "Filtered assets";
+            exportFilteredAssetsMenuItem.Text = "筛选资产";
             exportFilteredAssetsMenuItem.Click += exportFilteredAssetsMenuItem_Click;
             // 
             // toolStripSeparator3
@@ -524,7 +524,7 @@ namespace AssetStudio.GUI
             // 
             exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Name = "exportAnimatorWithSelectedAnimationClipToolStripMenuItem";
             exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
-            exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Text = "Animator + selected AnimationClips";
+            exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Text = "动画师+选定动画剪辑";
             exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Click += exportAnimatorwithAnimationClipMenuItem_Click;
             // 
             // toolStripSeparator4
@@ -537,27 +537,27 @@ namespace AssetStudio.GUI
             toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem4, toolStripMenuItem5, toolStripMenuItem6 });
             toolStripMenuItem2.Name = "toolStripMenuItem2";
             toolStripMenuItem2.Size = new System.Drawing.Size(266, 22);
-            toolStripMenuItem2.Text = "Raw";
+            toolStripMenuItem2.Text = "原始的";
             // 
             // toolStripMenuItem4
             // 
             toolStripMenuItem4.Name = "toolStripMenuItem4";
             toolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem4.Text = "All assets";
+            toolStripMenuItem4.Text = "所有资产";
             toolStripMenuItem4.Click += toolStripMenuItem4_Click;
             // 
             // toolStripMenuItem5
             // 
             toolStripMenuItem5.Name = "toolStripMenuItem5";
             toolStripMenuItem5.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem5.Text = "Selected assets";
+            toolStripMenuItem5.Text = "选定资产";
             toolStripMenuItem5.Click += toolStripMenuItem5_Click;
             // 
             // toolStripMenuItem6
             // 
             toolStripMenuItem6.Name = "toolStripMenuItem6";
             toolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem6.Text = "Filtered assets";
+            toolStripMenuItem6.Text = "筛选资产";
             toolStripMenuItem6.Click += toolStripMenuItem6_Click;
             // 
             // toolStripMenuItem3
@@ -571,21 +571,21 @@ namespace AssetStudio.GUI
             // 
             toolStripMenuItem7.Name = "toolStripMenuItem7";
             toolStripMenuItem7.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem7.Text = "All assets";
+            toolStripMenuItem7.Text = "所有资产";
             toolStripMenuItem7.Click += toolStripMenuItem7_Click;
             // 
             // toolStripMenuItem8
             // 
             toolStripMenuItem8.Name = "toolStripMenuItem8";
             toolStripMenuItem8.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem8.Text = "Selected assets";
+            toolStripMenuItem8.Text = "选定资产";
             toolStripMenuItem8.Click += toolStripMenuItem8_Click;
             // 
             // toolStripMenuItem9
             // 
             toolStripMenuItem9.Name = "toolStripMenuItem9";
             toolStripMenuItem9.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem9.Text = "Filtered assets";
+            toolStripMenuItem9.Text = "筛选资产";
             toolStripMenuItem9.Click += toolStripMenuItem9_Click;
             // 
             // toolStripMenuItem16
@@ -599,21 +599,21 @@ namespace AssetStudio.GUI
             // 
             toolStripMenuItem17.Name = "toolStripMenuItem17";
             toolStripMenuItem17.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem17.Text = "All assets";
+            toolStripMenuItem17.Text = "所有资产";
             toolStripMenuItem17.Click += toolStripMenuItem17_Click;
             // 
             // toolStripMenuItem24
             // 
             toolStripMenuItem24.Name = "toolStripMenuItem24";
             toolStripMenuItem24.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem24.Text = "Selected assets";
+            toolStripMenuItem24.Text = "选定资产";
             toolStripMenuItem24.Click += toolStripMenuItem24_Click;
             // 
             // toolStripMenuItem25
             // 
             toolStripMenuItem25.Name = "toolStripMenuItem25";
             toolStripMenuItem25.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem25.Text = "Filtered assets";
+            toolStripMenuItem25.Text = "筛选资产";
             toolStripMenuItem25.Click += toolStripMenuItem25_Click;
             // 
             // toolStripSeparator2
@@ -626,27 +626,27 @@ namespace AssetStudio.GUI
             toolStripMenuItem10.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripMenuItem11, toolStripMenuItem12, toolStripMenuItem13 });
             toolStripMenuItem10.Name = "toolStripMenuItem10";
             toolStripMenuItem10.Size = new System.Drawing.Size(266, 22);
-            toolStripMenuItem10.Text = "Asset list to XML";
+            toolStripMenuItem10.Text = "资产列表转换为XML";
             // 
             // toolStripMenuItem11
             // 
             toolStripMenuItem11.Name = "toolStripMenuItem11";
             toolStripMenuItem11.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem11.Text = "All assets";
+            toolStripMenuItem11.Text = "所有资产";
             toolStripMenuItem11.Click += toolStripMenuItem11_Click;
             // 
             // toolStripMenuItem12
             // 
             toolStripMenuItem12.Name = "toolStripMenuItem12";
             toolStripMenuItem12.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem12.Text = "Selected assets";
+            toolStripMenuItem12.Text = "选定资产";
             toolStripMenuItem12.Click += toolStripMenuItem12_Click;
             // 
             // toolStripMenuItem13
             // 
             toolStripMenuItem13.Name = "toolStripMenuItem13";
             toolStripMenuItem13.Size = new System.Drawing.Size(152, 22);
-            toolStripMenuItem13.Text = "Filtered assets";
+            toolStripMenuItem13.Text = "筛选资产";
             toolStripMenuItem13.Click += toolStripMenuItem13_Click;
             // 
             // sceneHierarchy
@@ -1335,7 +1335,7 @@ namespace AssetStudio.GUI
             // 
             exportSelectedAssetsToolStripMenuItem.Name = "exportSelectedAssetsToolStripMenuItem";
             exportSelectedAssetsToolStripMenuItem.Size = new System.Drawing.Size(303, 22);
-            exportSelectedAssetsToolStripMenuItem.Text = "Export selected assets";
+            exportSelectedAssetsToolStripMenuItem.Text = "Export 选定资产";
             exportSelectedAssetsToolStripMenuItem.Click += exportSelectedAssetsToolStripMenuItem_Click;
             // 
             // exportAnimatorwithselectedAnimationClipMenuItem
