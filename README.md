@@ -1,4 +1,4 @@
-[English£¨Ó¢ÎÄ£©](./README.md)   [¼òÌåÖÐÎÄ(Simplified Chinese)](./README-zh_cn.md)
+[Englishï¼ˆè‹±æ–‡ï¼‰](./README.md)   [ç®€ä½“ä¸­æ–‡(Simplified Chinese)](./README-zh_cn.md)
 
 Here is the original author's `README.md`. This project is only for translation and no modifications will be made
 

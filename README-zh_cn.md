@@ -1,60 +1,60 @@
-[English£¨Ó¢ÎÄ£©](./README.md)   [¼òÌåÖĞÎÄ(Simplified Chinese)](./README-zh_cn.md)
+[Englishï¼ˆè‹±æ–‡ï¼‰](./README.md)   [ç®€ä½“ä¸­æ–‡(Simplified Chinese)](./README-zh_cn.md)
 
 
-ÒÔÏÂÊÇÔ­×÷Õß `README.md` µÄÖĞÎÄ°æ±¾¡£±¾ÏîÄ¿½ö×ö·­Òë£¬²»×öĞŞ¸Ä
+ä»¥ä¸‹æ˜¯åŸä½œè€… `README.md` çš„ä¸­æ–‡ç‰ˆæœ¬ã€‚æœ¬é¡¹ç›®ä»…åšç¿»è¯‘ï¼Œä¸åšä¿®æ”¹
 
 # Studio
 
-# ×¢Òâ£ºÏîÄ¿ÒÑÔİÊ±ÔİÍ£¡£
+# æ³¨æ„ï¼šé¡¹ç›®å·²æš‚æ—¶æš‚åœã€‚
 
-²é¿´Ô­[AssetStudioÏîÄ¿](https://github.com/Perfare/AssetStudio)»ñÈ¡¸ü¶àĞÅÏ¢¡£
+æŸ¥çœ‹åŸ[AssetStudioé¡¹ç›®](https://github.com/Perfare/AssetStudio)è·å–æ›´å¤šä¿¡æ¯ã€‚
 
-×¢Òâ£ºĞèÒª»¥ÁªÍøÁ¬½ÓÀ´»ñÈ¡ asset_index jsons¡£
-
-_____________________________________________________________________________________________________________________________
-ÈçºÎÊ¹ÓÃ£º
-
-²é¿´½Ì³Ì[ÕâÀï](https://gist.github.com/Modder4869/0f5371f8879607eb95b8e63badca227e)£¨¸ĞĞ»Modder4869±àĞ´½Ì³Ì£©
+æ³¨æ„ï¼šéœ€è¦äº’è”ç½‘è¿æ¥æ¥è·å– asset_index jsonsã€‚
 
 _____________________________________________________________________________________________________________________________
-CLI °æ±¾£º
+å¦‚ä½•ä½¿ç”¨ï¼š
+
+æŸ¥çœ‹æ•™ç¨‹[è¿™é‡Œ](https://gist.github.com/Modder4869/0f5371f8879607eb95b8e63badca227e)ï¼ˆæ„Ÿè°¢Modder4869ç¼–å†™æ•™ç¨‹ï¼‰
+
+_____________________________________________________________________________________________________________________________
+CLI ç‰ˆæœ¬ï¼š
 ```
-ÃèÊö£º
+æè¿°ï¼š
 
-ÓÃ·¨£º
-  AssetStudioCLI <ÊäÈëÂ·¾¶> <Êä³öÂ·¾¶> [Ñ¡Ïî]
+ç”¨æ³•ï¼š
+  AssetStudioCLI <è¾“å…¥è·¯å¾„> <è¾“å‡ºè·¯å¾„> [é€‰é¡¹]
 
-²ÎÊı£º
-  <ÊäÈëÂ·¾¶>   ÊäÈëÎÄ¼ş/ÎÄ¼ş¼Ğ¡£
-  <Êä³öÂ·¾¶>  Êä³öÎÄ¼ş¼Ğ¡£
+å‚æ•°ï¼š
+  <è¾“å…¥è·¯å¾„>   è¾“å…¥æ–‡ä»¶/æ–‡ä»¶å¤¹ã€‚
+  <è¾“å‡ºè·¯å¾„>  è¾“å‡ºæ–‡ä»¶å¤¹ã€‚
 
-Ñ¡Ïî£º
-  --silent                                                Òş²ØÈÕÖ¾ÏûÏ¢¡£
-  --type <Texture2D|Sprite|µÈµÈ>                         Ö¸¶¨ unity ÀàÀàĞÍ
-  --filter <¹ıÂËÆ÷>                                       Ö¸¶¨ÕıÔò±í´ïÊ½¹ıÂËÆ÷¡£
-  --game <BH3|CB1|CB2|CB3|GI|SR|TOT|ZZZ> £¨±ØĞè£©       Ö¸¶¨ÓÎÏ·¡£
-  --map_op <AssetMap|Both|CABMap|None>                    Ö¸¶¨Òª¹¹½¨µÄµØÍ¼¡£ [Ä¬ÈÏ£ºNone]
-  --map_type <JSON|XML>                                   AssetMap Êä³öÀàĞÍ¡£[Ä¬ÈÏ£ºXML]
-  --map_name <map_name>                                   Ö¸¶¨ AssetMap ÎÄ¼şÃû¡£
-  --group_assets_type <ByContainer|BySource|ByType|None>  Ö¸¶¨ÈçºÎ½«µ¼³öµÄ×ÊÔ´·Ö×é¡£ [Ä¬ÈÏ£º0]
-  --no_asset_bundle                                       ´Ó AssetMap/Export ÖĞÅÅ³ı AssetBundle¡£
-  --no_index_object                                       ´Ó AssetMap/Export ÖĞÅÅ³ı IndexObject/MiHoYoBinData¡£
-  --xor_key <xor_key>                                     XOR ÃÜÔ¿À´½âÃÜ MiHoYoBinData¡£
-  --ai_file <ai_file>                                     Ö¸¶¨ asset_index json ÎÄ¼şÂ·¾¶£¨ÓÃÓÚ»Ö¸´ GI ÈİÆ÷£©¡£
-  --version                                               ÏÔÊ¾°æ±¾ĞÅÏ¢
-  -?, -h, --help                                          ÏÔÊ¾°ïÖúºÍÓÃ·¨ĞÅÏ¢
+é€‰é¡¹ï¼š
+  --silent                                                éšè—æ—¥å¿—æ¶ˆæ¯ã€‚
+  --type <Texture2D|Sprite|ç­‰ç­‰>                         æŒ‡å®š unity ç±»ç±»å‹
+  --filter <è¿‡æ»¤å™¨>                                       æŒ‡å®šæ­£åˆ™è¡¨è¾¾å¼è¿‡æ»¤å™¨ã€‚
+  --game <BH3|CB1|CB2|CB3|GI|SR|TOT|ZZZ> ï¼ˆå¿…éœ€ï¼‰       æŒ‡å®šæ¸¸æˆã€‚
+  --map_op <AssetMap|Both|CABMap|None>                    æŒ‡å®šè¦æ„å»ºçš„åœ°å›¾ã€‚ [é»˜è®¤ï¼šNone]
+  --map_type <JSON|XML>                                   AssetMap è¾“å‡ºç±»å‹ã€‚[é»˜è®¤ï¼šXML]
+  --map_name <map_name>                                   æŒ‡å®š AssetMap æ–‡ä»¶åã€‚
+  --group_assets_type <ByContainer|BySource|ByType|None>  æŒ‡å®šå¦‚ä½•å°†å¯¼å‡ºçš„èµ„æºåˆ†ç»„ã€‚ [é»˜è®¤ï¼š0]
+  --no_asset_bundle                                       ä» AssetMap/Export ä¸­æ’é™¤ AssetBundleã€‚
+  --no_index_object                                       ä» AssetMap/Export ä¸­æ’é™¤ IndexObject/MiHoYoBinDataã€‚
+  --xor_key <xor_key>                                     XOR å¯†é’¥æ¥è§£å¯† MiHoYoBinDataã€‚
+  --ai_file <ai_file>                                     æŒ‡å®š asset_index json æ–‡ä»¶è·¯å¾„ï¼ˆç”¨äºæ¢å¤ GI å®¹å™¨ï¼‰ã€‚
+  --version                                               æ˜¾ç¤ºç‰ˆæœ¬ä¿¡æ¯
+  -?, -h, --help                                          æ˜¾ç¤ºå¸®åŠ©å’Œç”¨æ³•ä¿¡æ¯
 ```
 _____________________________________________________________________________________________________________________________
-×¢ÒâÊÂÏî£º
+æ³¨æ„äº‹é¡¹ï¼š
 ```
-- Èç¹ûÓöµ½¡°MeshRenderer/SkinnedMeshRenderer¡±´íÎó£¬È·±£ÔÚ¼ÓÔØ×ÊÔ´Ç°ÔÚ¡°µ¼³öÑ¡Ïî¡±ÖĞÆôÓÃ¡°½ûÓÃäÖÈ¾Æ÷¡±Ñ¡Ïî¡£
-- ÔÚĞèÒªµ¼³öÄ£ĞÍ/¶¯»­Ê¦¶ø²»ĞèÒª¼ìË÷ËùÓĞ¶¯»­µÄÇé¿öÏÂ£¬È·±£ÔÚ¡°Ñ¡Ïî -> µ¼³öÑ¡Ïî¡±ÖĞÆôÓÃ¡°ºöÂÔ¿ØÖÆÆ÷¶¯»­¡±Ñ¡Ïî¡£
+- å¦‚æœé‡åˆ°â€œMeshRenderer/SkinnedMeshRendererâ€é”™è¯¯ï¼Œç¡®ä¿åœ¨åŠ è½½èµ„æºå‰åœ¨â€œå¯¼å‡ºé€‰é¡¹â€ä¸­å¯ç”¨â€œç¦ç”¨æ¸²æŸ“å™¨â€é€‰é¡¹ã€‚
+- åœ¨éœ€è¦å¯¼å‡ºæ¨¡å‹/åŠ¨ç”»å¸ˆè€Œä¸éœ€è¦æ£€ç´¢æ‰€æœ‰åŠ¨ç”»çš„æƒ…å†µä¸‹ï¼Œç¡®ä¿åœ¨â€œé€‰é¡¹ -> å¯¼å‡ºé€‰é¡¹â€ä¸­å¯ç”¨â€œå¿½ç•¥æ§åˆ¶å™¨åŠ¨ç”»â€é€‰é¡¹ã€‚
 
 ```
-ÌØ±ğ¸ĞĞ»£º
-- Perfare£ºÔ­Ê¼×÷Õß¡£
-- Khang06£º[ÏîÄ¿](https://github.com/khang06/genshinblkstuff)ÓÃÓÚÌáÈ¡¡£
-- Radioegor146£º[×Ê²úË÷Òı](https://github.com/radioegor146/gi-asset-indexes)ÓÃÓÚ»Ö¸´/¸üĞÂ asset_index µÄ¡£
-- Ds5678£º[AssetRipper](https://github.com/AssetRipper/AssetRipper)[[discord](https://discord.gg/XqXa53W2Yh)]Ìá¹©ÁËÓĞ¹Ø×Ê²ú¸ñÊ½ºÍ½âÎöµÄĞÅÏ¢¡£
-- mafaca£º[uTinyRipper](https://github.com/mafaca/UtinyRipper)ÓÃÓÚ `YAML` ºÍ `AnimationClipConverter`¡£
+ç‰¹åˆ«æ„Ÿè°¢ï¼š
+- Perfareï¼šåŸå§‹ä½œè€…ã€‚
+- Khang06ï¼š[é¡¹ç›®](https://github.com/khang06/genshinblkstuff)ç”¨äºæå–ã€‚
+- Radioegor146ï¼š[èµ„äº§ç´¢å¼•](https://github.com/radioegor146/gi-asset-indexes)ç”¨äºæ¢å¤/æ›´æ–° asset_index çš„ã€‚
+- Ds5678ï¼š[AssetRipper](https://github.com/AssetRipper/AssetRipper)[[discord](https://discord.gg/XqXa53W2Yh)]æä¾›äº†æœ‰å…³èµ„äº§æ ¼å¼å’Œè§£æçš„ä¿¡æ¯ã€‚
+- mafacaï¼š[uTinyRipper](https://github.com/mafaca/UtinyRipper)ç”¨äº `YAML` å’Œ `AnimationClipConverter`ã€‚
 
