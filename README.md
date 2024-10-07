@@ -1,3 +1,7 @@
+[English（英文）](./README.md)   [简体中文(Simplified Chinese)](./README-zh_cn.md)
+
+Here is the original author's `README.md`. This project is only for translation and no modifications will be made
+
 # Studio
 
 # NOTICE: Project has been temporarily suspended till further notice.
